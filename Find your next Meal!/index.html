@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@700&family=Gentium+Book+Basic:wght@400&display=swap" rel="stylesheet">
+
+  <title>Find your next Meal!</title>
+</head>
+<body>
+<div class="container">
+  
+  <section id="userAnswer">
+    <h2>Find Your Next Meal!</h2>
+    <p>Enter a main ingredient to get delicious recipe options</p>
+    <input type="text" id="mainIngredient" placeholder="e.g., chicken">
+    <button id="request" onclick="fetchRecipeOptions()">Get Recipe Options</button> 
+  </section>
+
+  <section id="recipes">
+    <div id="output"></div>
+  </section>
+</div>
+</body>
+
+
+<script src="script.js"></script>
+
+</html>

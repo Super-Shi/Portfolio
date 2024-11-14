@@ -1,0 +1,177 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Centering and Width Control */
+body {
+  background-color: #132043; /* Dark blue background */
+  color: #FDF0F0; /* Light pink for text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Gentium Book Basic', serif;
+}
+h3 {
+  font-family: 'Spectral', serif;
+}
+
+/* Main Container */
+.container {
+  width: 85%;
+  max-width: 1200px;
+}
+
+/* Section Styling */
+section {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #1F4172; /* Medium blue for section backgrounds */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #FDF0F0; /* Light pink text */
+}
+
+/* User Input Section */
+#userAnswer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px; /* Added padding for spacing */
+}
+
+#userAnswer h2 {
+  margin-bottom: 10px;
+}
+
+#userAnswer p {
+  margin-bottom: 20px;
+}
+
+/* Input and Button Styling */
+#mainIngredient {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  max-width: 500px;
+  border: 1px solid #F1B4BB; /* Soft pink border */
+  border-radius: 5px;
+  margin-bottom: 20px; /* Increased margin for spacing */
+  color: #132043; /* Dark blue text */
+}
+
+#request {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #F1B4BB; /* Soft pink for button */
+  color: #132043; /* Dark blue text for contrast */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#request:hover {
+  background-color: #FDF0F0; /* Light pink on hover */
+}
+
+/* Recipes Section */
+#recipes {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Grid Styling for Recipe Cards */
+#output {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default */
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Responsive styling to make 3 columns on larger screens */
+@media (min-width: 768px) {
+  #output {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+  }
+}
+
+/* Recipe Card Styling */
+#output li {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #FDF0F0; /* Lighter pink background for cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  color: #132043; /* Dark blue text */
+}
+
+/* Centered Meal Title */
+#output li h3 {
+  font-size: 1.2em;
+  color: #1F4172; /* Medium blue for headings */
+  margin-bottom: 10px;
+  text-align: center; /* Center the text */
+  width: 100%; /* Ensure it takes up the full width */
+}
+
+#output li img {
+  display: block;
+  margin: 10px 0 15px 0; /* Add bottom margin to separate image from text */
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  align-self: center;
+}
+
+/* Info Row Styling */
+.info-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info-title {
+  font-weight: bold;
+  margin-right: 5px; /* Small space between title and value */
+  color: #1F4172; /* Medium blue for title */
+}
+
+/* Video Link Button Styling */
+#output li a {
+  display: inline-block;
+  color: #FDF0F0; /* Light pink text */
+  background-color: #1F4172; /* Medium blue background */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px; /* Rounded corners for a modern pill shape */
+  font-weight: bold;
+  font-size: 0.9em;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#output li a:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  background-color: #132043; /* Dark blue background on hover */
+}
+
+#output li p {
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: #132043; /* Dark blue for paragraph text */
+  margin-bottom: 10px;
+}
